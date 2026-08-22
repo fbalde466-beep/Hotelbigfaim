@@ -3,206 +3,723 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hôtel BIG FAIM</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Hôtel BIG FAIM — Luxe & Prestige à Thiès, Sénégal</title>
+  <meta name="description" content="Hôtel BIG FAIM, votre destination d'exception à Thiès. Chambres luxueuses, restaurant gastronomique, piscine, spa et salles de séminaires. Réservez votre séjour en ligne." />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="header">
-    <div class="logo">Hôtel BIG FAIM</div>
-    <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#chambres">Chambres</a>
-      <a href="#services">Services</a>
-      <a href="#reservation">Réservation</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon"><i data-lucide="hotel"></i></span>
+        <div class="logo-text">
+          <span class="logo-name">BIG FAIM</span>
+          <span class="logo-sub">Hotel &amp; Seminaires</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#a-propos" class="nav-link">A Propos</a>
+        <a href="#chambres" class="nav-link">Chambres</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#seminaires" class="nav-link">Seminaires</a>
+        <a href="#galerie" class="nav-link">Galerie</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#reservation" class="btn-nav" id="btn-reserve-nav">Reserver</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
   </header>
 
+  <!-- ===== HERO ===== -->
   <section class="hero" id="accueil">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Bienvenue à l’Hôtel BIG FAIM</h1>
-      <p>Le confort, le luxe et la tranquillité pour votre séjour.</p>
-      <a href="#reservation" class="btn">Réserver maintenant</a>
-    </div>
-  </section>
-<section class="section" id="chambres">
-  <h2>Nos Chambres</h2>
-  <div class="grid">
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Chambre Simple">
-      <h3>Chambre Simple</h3>
-      <p>Confortable pour une personne.</p>
-      <p><strong>Prix :</strong> 31 000 FCFA / nuit</p>
-      <button class="reserve-btn" onclick="reserverChambre('Chambre Simple', '35 000 FCFA / nuit')">
-        Réserver
-      </button>
-    </div>
-
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2105e?auto=format&fit=crop&w=900&q=80" alt="Chambre Double">
-      <h3>Chambre Double</h3>
-      <p>Parfaite pour deux personnes.</p>
-      <p><strong>Prix :</strong> 37 000 FCFA / nuit</p>
-      <button class="reserve-btn" onclick="reserverChambre('Chambre Double', '50 000 FCFA / nuit')">
-        Réserver
-      </button>
-    </div>
-
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1560067174-8943bdac2b58?auto=format&fit=crop&w=900&q=80" alt="Suite Luxe">
-      <h3>Suite Luxe</h3>
-      <p>Pour un séjour haut de gamme.</p>
-      <p><strong>Prix :</strong> 106 000 FCFA / nuit</p>
-      <button class="reserve-btn" onclick="reserverChambre('Suite Luxe', '90 000 FCFA / nuit')">
-        Réserver
-      </button>
-    </div>
-  </div>
-</section>
-  </section>
-<section class="section" id="galerie">
-  <h2>Galerie des Chambres</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Chambre 1">
-    <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2105e?auto=format&fit=crop&w=900&q=80" alt="Chambre 2">
-    <img src="https://images.unsplash.com/photo-1560067174-8943bdac2b58?auto=format&fit=crop&w=900&q=80" alt="Chambre 3">
-    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=900&q=80" alt="Chambre 4">
-    <img src="https://images.unsplash.com/photo-1582719478185-2f1f0b1b6f22?auto=format&fit=crop&w=900&q=80" alt="Chambre 5">
-    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80" alt="Chambre 6">
-  </div>
-</section>
-  <section class="section alt" id="services">
-    <h2>Nos Services</h2>
-    <div class="services">
-      <div class="service">Hébergement</div>
-      <div class="service">Restauration</div>
-      <div class="service">Wi-Fi gratuit</div>
-      <div class="service">Piscine</div>
-      <div class="service">Salle de séminaire</div>
-      <div class="service">Parking sécurisé</div>
-    </div>
-  <section class="section alt" id="seminaires">
-  <h2>Nos Salles de Séminaires</h2>
-
-  <div class="grid">
-    <div class="box">
-     <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="SALLE COCCINELLE"></ima>"  
-      <h3>SALLE COCCINELLE</h3>
-      <p><strong>Capacité :</strong> 35 personnes</p>
-      <p><strong>Tarif :</strong> 125 000 FCFA / jour</p>
-      <p>Parfaite pour les séminaires moyens et ateliers professionnels.</p>
-      <button class="reserve-btn" onclick="reserverSalle('Salle COCCINELLE', '35 spersonnes', '125 000 FCFA / jour')">Réserver cette salle</button>
-    </div>
-
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="SALLE BUTTERFLY">
-      <h3>salle BUTTERFLY</h3>
-      <p><strong>Capacité :</strong> 35 personnes</p>
-      <p><strong>Tarif :</strong> 125 000 FCFA / jour</p>
-      <p>Conçue pour les grands événements et conférences.</p>
-      <button class="reserve-btn" onclick="reserverSalle(' Salle BUTTERFLY', '35 personnes', '125 000 FCFA / jour')">Réserver cette salle</button>
-    </div>
-
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Salle FILAO">
-      <h3>Salle FILAO</h3>
-      <p><strong>Capacité :</strong> 86 personnes</p>
-      <p><strong>Tarif :</strong>  150 000 FCFA / jour</p>
-       <p>Idéale pour les réunions d’équipe et modificable en deux salle parfait pour les traveaux de groupe .</p>
-      <button class="reserve-btn" onclick="reserverSalle('Salle FILAO', '40 personnes', '150 000 FCFA / jour')">Réserver cette salle</button>
-    </div>
-
-    <div class="box">
-      <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Salle BILLARD">
-      <h3>Salle BILLARD</h3>
-      <p><strong>Capacité :</strong> 86 personnes</p>
-      <p><strong>Tarif :</strong> 150 000 FCFA / jour</p>
-      <p>Parfaite pour les conférences intermédiaires et ateliers.</p>
-      <button class="reserve-btn" onclick="reserverSalle('Salle BIALLARD ', '86 personnes', '150 000 FCFA / jour')">Réserver cette salle</button>
-    </div>
-  </div>
-</section>
-
-</section>
-  <section class="section" id="reservation">
-    <h2>Réservation</h2>
-    <form class="form" id="bookingForm">
-      <div class="input-group">
-        <label for="nom">Nom complet</label>
-        <input type="text" id="nom" required>
+      <p class="hero-eyebrow">Bienvenue a Thies, Senegal</p>
+      <h1>L'Art de Vivre<br><em>a son Summum</em></h1>
+      <p class="hero-sub">Decouvrez un havre d'elegance et de raffinement au coeur du Senegal. Chaque sejour est une experience inoubliable.</p>
+      <div class="hero-actions">
+        <a href="#reservation" class="btn btn-gold" id="hero-reserve">
+          <i data-lucide="calendar-check"></i>
+          Reserver maintenant
+        </a>
+        <a href="#a-propos" class="btn btn-outline-white" id="hero-discover">
+          <i data-lucide="play-circle"></i>
+          Decouvrir
+        </a>
       </div>
-
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Annees d'excellence</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">120</span>
+          <span class="stat-label">Chambres et Suites</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Clients satisfaits</span>
+        </div>
       </div>
-
-      <div class="input-group">
-        <label for="telephone">Téléphone</label>
-        <input type="tel" id="telephone" required>
-      </div>
-
-      <div class="input-group">
-        <label for="arrivee">Date d'arrivée</label>
-        <input type="date" id="arrivee" required>
-      </div>
-
-      <div class="input-group">
-        <label for="depart">Date de départ</label>
-        <input type="date" id="depart" required>
-      </div>
-
-      <div class="input-group">
-        <label for="typeSejour">Type de séjour</label>
-        <select id="typeSejour" required>
-          <option value="">Choisir...</option>
-          <option value="simple">Séjour simple</option>
-          <div class="input-group">
-  <label for="typeChambre">Type de chambre</label>
-          <option value="affaires">Séjour d'affaires</option>
-        </select>
-      </div>
-
-      <div class="input-group full" id="seminaireBox" style="display:none;">
-        <label for="salle">Salle de séminaire</label>
-        <select id="salle">
-          <option value="petite">Petite salle</option>
-          <option value="moyenne">Salle moyenne</option>
-          <option value="grande">Grande salle</option>
-        </select>
-      </div>
-
-      <div class="input-group full">
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" placeholder="Demande spéciale..."></textarea>
-      </div>
-
-      <button type="submit" class="btn full">Envoyer</button>
-    </form>
-  </section>
-<
-
- 
-    
-</section>
-  <section class="section alt" id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-      <p>Email : bigfaim@yahoo.com</p>
-      <p>Téléphone : +221 77 486 58 21</p>
-      <p>Fixe : 33 952 06 22</p>
-      <p>Adresse : Avenue Léopold Sédar Sénghor ,Thiès</p>
+    </div>
+    <div class="hero-scroll" id="scroll-indicator">
+      <i data-lucide="chevrons-down"></i>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© 2026 Hôtel BIG FAIM. Tous droits réservés.</p>
+  <!-- ===== A PROPOS ===== -->
+  <section class="section" id="a-propos">
+    <div class="about-grid">
+      <div class="about-images">
+        <div class="about-img-main">
+          <img src="Images/hotel_lobby.jpg" alt="Hall d'entree de l'Hotel BIG FAIM" loading="lazy">
+        </div>
+        <div class="about-img-secondary">
+          <img src="Images/hotel_suite.jpg" alt="Suite luxueuse de l'Hotel BIG FAIM" loading="lazy">
+          <div class="about-badge">
+            <i data-lucide="star"></i>
+            <span>Excellence<br>Hoteliere</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Notre Histoire</p>
+        <h2 class="section-title">Un Hotel au Coeur<br>de la Culture Senegalaise</h2>
+        <p class="about-text">Situe sur l'Avenue Leopold Sedar Senghor a Thies, l'Hotel BIG FAIM incarne l'excellence de l'hospitalite africaine. Depuis plus de 25 ans, nous accueillons voyageurs, hommes d'affaires et familles dans un cadre alliant luxe contemporain et authenticite locale.</p>
+        <p class="about-text">Chaque detail de notre etablissement a ete pense pour offrir une experience sensorielle unique, de notre cuisine gastronomique aux chambres decorees d'oeuvres d'art africaines.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="feature-icon-sm"><i data-lucide="leaf"></i></div>
+            <span>Cadre naturel et verdoyant</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon-sm"><i data-lucide="chef-hat"></i></div>
+            <span>Gastronomie locale et internationale</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon-sm"><i data-lucide="shield-check"></i></div>
+            <span>Securite et confidentialite assurees</span>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon-sm"><i data-lucide="award"></i></div>
+            <span>Service personnalise 24h/24</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHAMBRES ===== -->
+  <section class="section section-dark" id="chambres">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow light">Nos Hebergements</p>
+        <h2 class="section-title light">Chambres et Suites</h2>
+        <p class="section-desc light">Chaque chambre est un sanctuaire de confort, concu pour repondre aux exigences les plus elevees.</p>
+      </div>
+
+      <div class="rooms-grid">
+
+        <article class="room-card" id="room-simple">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Chambre Simple" loading="lazy">
+            <div class="room-badge">Standard</div>
+          </div>
+          <div class="room-body">
+            <h3>Chambre Simple</h3>
+            <p>Elegante et fonctionnelle, ideale pour les voyageurs solos en quete de confort raffine.</p>
+            <ul class="room-amenities">
+              <li><i data-lucide="wifi"></i> Wi-Fi haut debit</li>
+              <li><i data-lucide="tv"></i> TV ecran plat</li>
+              <li><i data-lucide="wind"></i> Climatisation</li>
+              <li><i data-lucide="bath"></i> Salle de bain privee</li>
+            </ul>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-amount">31 000</span>
+                <span class="price-unit">FCFA / nuit</span>
+              </div>
+              <button class="btn-reserve" id="reserve-simple" onclick="reserverChambre('Chambre Simple', '31 000 FCFA / nuit')">
+                Reserver <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card featured" id="room-double">
+          <div class="room-img-wrap">
+            <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2105e?auto=format&fit=crop&w=900&q=80" alt="Chambre Double" loading="lazy">
+            <div class="room-badge popular">Populaire</div>
+          </div>
+          <div class="room-body">
+            <h3>Chambre Double</h3>
+            <p>Parfaite pour les couples, avec un grand lit king et une decoration soignee aux accents africains.</p>
+            <ul class="room-amenities">
+              <li><i data-lucide="wifi"></i> Wi-Fi haut debit</li>
+              <li><i data-lucide="tv"></i> TV ecran plat</li>
+              <li><i data-lucide="wind"></i> Climatisation</li>
+              <li><i data-lucide="bath"></i> Baignoire et douche</li>
+            </ul>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-amount">37 000</span>
+                <span class="price-unit">FCFA / nuit</span>
+              </div>
+              <button class="btn-reserve" id="reserve-double" onclick="reserverChambre('Chambre Double', '37 000 FCFA / nuit')">
+                Reserver <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" id="room-suite">
+          <div class="room-img-wrap">
+            <img src="Images/hotel_suite.jpg" alt="Suite Luxe" loading="lazy">
+            <div class="room-badge luxury">Suite</div>
+          </div>
+          <div class="room-body">
+            <h3>Suite Luxe</h3>
+            <p>Notre suite prestige offre un espace de vie exceptionnel avec salon privatif et vue panoramique.</p>
+            <ul class="room-amenities">
+              <li><i data-lucide="wifi"></i> Wi-Fi premium</li>
+              <li><i data-lucide="coffee"></i> Bar et minibar</li>
+              <li><i data-lucide="wind"></i> Climatisation</li>
+              <li><i data-lucide="sparkles"></i> Service butler</li>
+            </ul>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-amount">106 000</span>
+                <span class="price-unit">FCFA / nuit</span>
+              </div>
+              <button class="btn-reserve" id="reserve-suite" onclick="reserverChambre('Suite Luxe', '106 000 FCFA / nuit')">
+                Reserver <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Ce Que Nous Offrons</p>
+        <h2 class="section-title">Services et Prestations</h2>
+        <p class="section-desc">Une palette complete de services concus pour sublimer votre sejour.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" id="service-hebergement">
+          <div class="service-icon"><i data-lucide="bed-double"></i></div>
+          <h3>Hebergement</h3>
+          <p>Chambres et suites luxueuses avec toutes les commodites modernes pour un confort optimal.</p>
+        </div>
+
+        <div class="service-card has-img" id="service-restaurant">
+          <div class="service-icon"><i data-lucide="utensils"></i></div>
+          <h3>Restaurant</h3>
+          <p>Savoureuse cuisine senegalaise et internationale preparee par nos chefs talentueux.</p>
+          <div class="service-img">
+            <img src="Images/hotel_restaurant.jpg" alt="Restaurant de l'Hotel BIG FAIM" loading="lazy">
+          </div>
+        </div>
+
+        <div class="service-card has-img" id="service-piscine">
+          <div class="service-icon"><i data-lucide="waves"></i></div>
+          <h3>Piscine</h3>
+          <p>Detendez-vous au bord de notre piscine exterieure entouree de verdure tropicale.</p>
+          <div class="service-img">
+            <img src="Images/hotel_pool.jpg" alt="Piscine de l'Hotel BIG FAIM" loading="lazy">
+          </div>
+        </div>
+
+        <div class="service-card" id="service-wifi">
+          <div class="service-icon"><i data-lucide="wifi"></i></div>
+          <h3>Wi-Fi Gratuit</h3>
+          <p>Connexion internet haut debit disponible dans toutes les zones de l'hotel, sans frais.</p>
+        </div>
+
+        <div class="service-card" id="service-parking">
+          <div class="service-icon"><i data-lucide="car"></i></div>
+          <h3>Parking Securise</h3>
+          <p>Parking prive surveille 24h/24 pour votre vehicule avec acces facile depuis l'hotel.</p>
+        </div>
+
+        <div class="service-card" id="service-room-service">
+          <div class="service-icon"><i data-lucide="bell-ring"></i></div>
+          <h3>Room Service</h3>
+          <p>Service en chambre disponible 24h/24 pour satisfaire toutes vos envies a tout moment.</p>
+        </div>
+
+        <div class="service-card" id="service-airport">
+          <div class="service-icon"><i data-lucide="plane-landing"></i></div>
+          <h3>Navette Aeroport</h3>
+          <p>Service de transfert depuis et vers l'aeroport sur reservation pour un accueil sans stress.</p>
+        </div>
+
+        <div class="service-card" id="service-concierge">
+          <div class="service-icon"><i data-lucide="concierge-bell"></i></div>
+          <h3>Conciergerie</h3>
+          <p>Notre equipe est a votre disposition pour organiser visites, excursions et evenements.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / CHIFFRES ===== -->
+  <section class="section-highlight" id="experience">
+    <div class="highlight-content">
+      <p class="section-eyebrow light">Notre Engagement</p>
+      <h2 class="section-title light">Une Experience Inoubliable</h2>
+    </div>
+    <div class="highlight-numbers">
+      <div class="hl-number" id="hl-guests">
+        <span class="hl-val" data-target="5000">0</span><span class="hl-suffix">+</span>
+        <span class="hl-label">Clients accueillis / an</span>
+      </div>
+      <div class="hl-number" id="hl-rooms">
+        <span class="hl-val" data-target="120">0</span>
+        <span class="hl-label">Chambres disponibles</span>
+      </div>
+      <div class="hl-number" id="hl-seminars">
+        <span class="hl-val" data-target="4">0</span>
+        <span class="hl-label">Salles de seminaire</span>
+      </div>
+      <div class="hl-number" id="hl-years">
+        <span class="hl-val" data-target="25">0</span><span class="hl-suffix">+</span>
+        <span class="hl-label">Annees d'experience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEMINAIRES ===== -->
+  <section class="section" id="seminaires">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Evenements Professionnels</p>
+        <h2 class="section-title">Salles de Seminaires</h2>
+        <p class="section-desc">Des espaces modulables et equipes pour vos conferences, formations et evenements d'entreprise.</p>
+      </div>
+
+      <div class="seminars-grid">
+
+        <article class="seminar-card" id="salle-coccinelle">
+          <div class="seminar-img">
+            <img src="Images/hotel_conference.jpg" alt="Salle Coccinelle" loading="lazy">
+            <div class="seminar-overlay">
+              <button class="btn-reserve-seminar" onclick="reserverSalle('Salle COCCINELLE', '35', '125 000 FCFA / jour')">
+                <i data-lucide="calendar-plus"></i> Reserver
+              </button>
+            </div>
+          </div>
+          <div class="seminar-body">
+            <div class="seminar-header-row">
+              <h3>Salle COCCINELLE</h3>
+              <span class="seminar-capacity"><i data-lucide="users"></i> 35 pers.</span>
+            </div>
+            <p>Parfaite pour les seminaires moyens et ateliers professionnels. Equipee d'un videoprojecteur et tableau interactif.</p>
+            <div class="seminar-features">
+              <span><i data-lucide="monitor"></i> Projecteur HD</span>
+              <span><i data-lucide="mic"></i> Sonorisation</span>
+              <span><i data-lucide="wifi"></i> Wi-Fi</span>
+            </div>
+            <div class="seminar-price"><strong>125 000 FCFA</strong> / jour</div>
+          </div>
+        </article>
+
+        <article class="seminar-card" id="salle-butterfly">
+          <div class="seminar-img">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Salle Butterfly" loading="lazy">
+            <div class="seminar-overlay">
+              <button class="btn-reserve-seminar" onclick="reserverSalle('Salle BUTTERFLY', '35', '125 000 FCFA / jour')">
+                <i data-lucide="calendar-plus"></i> Reserver
+              </button>
+            </div>
+          </div>
+          <div class="seminar-body">
+            <div class="seminar-header-row">
+              <h3>Salle BUTTERFLY</h3>
+              <span class="seminar-capacity"><i data-lucide="users"></i> 35 pers.</span>
+            </div>
+            <p>Concue pour les conferences et reunions d'equipe, avec une configuration modulable.</p>
+            <div class="seminar-features">
+              <span><i data-lucide="monitor"></i> Ecran LED</span>
+              <span><i data-lucide="mic"></i> Micro sans-fil</span>
+              <span><i data-lucide="coffee"></i> Pause-cafe</span>
+            </div>
+            <div class="seminar-price"><strong>125 000 FCFA</strong> / jour</div>
+          </div>
+        </article>
+
+        <article class="seminar-card" id="salle-filao">
+          <div class="seminar-img">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Salle Filao" loading="lazy">
+            <div class="seminar-overlay">
+              <button class="btn-reserve-seminar" onclick="reserverSalle('Salle FILAO', '86', '150 000 FCFA / jour')">
+                <i data-lucide="calendar-plus"></i> Reserver
+              </button>
+            </div>
+          </div>
+          <div class="seminar-body">
+            <div class="seminar-header-row">
+              <h3>Salle FILAO</h3>
+              <span class="seminar-capacity"><i data-lucide="users"></i> 86 pers.</span>
+            </div>
+            <p>Grande salle modulable pouvant etre divisee en deux espaces independants pour travaux de groupe.</p>
+            <div class="seminar-features">
+              <span><i data-lucide="layout-panel-left"></i> Modulable</span>
+              <span><i data-lucide="monitor"></i> Double ecran</span>
+              <span><i data-lucide="wifi"></i> Wi-Fi</span>
+            </div>
+            <div class="seminar-price"><strong>150 000 FCFA</strong> / jour</div>
+          </div>
+        </article>
+
+        <article class="seminar-card" id="salle-billard">
+          <div class="seminar-img">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Salle Billard" loading="lazy">
+            <div class="seminar-overlay">
+              <button class="btn-reserve-seminar" onclick="reserverSalle('Salle BILLARD', '86', '150 000 FCFA / jour')">
+                <i data-lucide="calendar-plus"></i> Reserver
+              </button>
+            </div>
+          </div>
+          <div class="seminar-body">
+            <div class="seminar-header-row">
+              <h3>Salle BILLARD</h3>
+              <span class="seminar-capacity"><i data-lucide="users"></i> 86 pers.</span>
+            </div>
+            <p>Ideale pour les grands evenements et conferences. Configuration theatre ou classe disponible.</p>
+            <div class="seminar-features">
+              <span><i data-lucide="monitor"></i> Projecteur 4K</span>
+              <span><i data-lucide="mic-2"></i> Podium et micro</span>
+              <span><i data-lucide="coffee"></i> Service traiteur</span>
+            </div>
+            <div class="seminar-price"><strong>150 000 FCFA</strong> / jour</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="section section-dark" id="galerie">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow light">En Images</p>
+        <h2 class="section-title light">Galerie de l'Hotel</h2>
+        <p class="section-desc light">Laissez-vous seduire par l'ambiance unique et la beaute de nos espaces.</p>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gallery-item large">
+          <img src="Images/hotel_lobby.jpg" alt="Hall d'entree" loading="lazy">
+          <div class="gallery-caption">Hall d'entree</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Images/hotel_restaurant.jpg" alt="Restaurant" loading="lazy">
+          <div class="gallery-caption">Restaurant</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Images/hotel_suite.jpg" alt="Suite Luxe" loading="lazy">
+          <div class="gallery-caption">Suite Luxe</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Images/hotel_pool.jpg" alt="Piscine" loading="lazy">
+          <div class="gallery-caption">Piscine et Detente</div>
+        </div>
+        <div class="gallery-item">
+          <img src="Images/hotel_conference.jpg" alt="Salle de conference" loading="lazy">
+          <div class="gallery-caption">Salles de Conference</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=900&q=80" alt="Chambre Double" loading="lazy">
+          <div class="gallery-caption">Chambre Double</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMOIGNAGES ===== -->
+  <section class="section" id="temoignages">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Avis de Nos Hotes</p>
+        <h2 class="section-title">Ce Qu'ils Disent</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" id="testimonial-1">
+          <div class="stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p>"Un sejour absolument parfait. Le personnel est attentionne et les chambres sont magnifiques. Je reviendrai sans hesiter !"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#c9a84c;">A</div>
+            <div>
+              <strong>Aminata Diallo</strong>
+              <span>Dakar, Senegal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-2">
+          <div class="stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p>"Notre seminaire d'entreprise s'est deroule dans d'excellentes conditions. Salles equipees, service impeccable et cuisine delicieuse."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#2c6e49;">M</div>
+            <div>
+              <strong>Mamadou Kone</strong>
+              <span>Directeur Commercial</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="testimonial-3">
+          <div class="stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p>"Le meilleur hotel de Thies. La suite etait somptueuse, le restaurant excellent et l'equipe aux petits soins. Experience memorable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:#7b3f7f;">F</div>
+            <div>
+              <strong>Fatou Mbaye</strong>
+              <span>Saint-Louis, Senegal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVATION ===== -->
+  <section class="section section-reservation" id="reservation">
+    <div class="reservation-container">
+      <div class="reservation-info">
+        <p class="section-eyebrow light">Reservez Votre Sejour</p>
+        <h2 class="section-title light">Vivez l'Experience<br>BIG FAIM</h2>
+        <p class="reservation-text">Remplissez le formulaire pour reserver votre chambre ou salle de seminaire. Notre equipe confirmera la disponibilite dans les plus brefs delais.</p>
+        <div class="reservation-contact-items">
+          <div class="res-contact-item">
+            <i data-lucide="phone"></i>
+            <span>+221 77 486 58 21</span>
+          </div>
+          <div class="res-contact-item">
+            <i data-lucide="mail"></i>
+            <span>bigfaim@yahoo.com</span>
+          </div>
+          <div class="res-contact-item">
+            <i data-lucide="map-pin"></i>
+            <span>Avenue L. S. Senghor, Thies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reservation-form-wrap">
+        <form class="form" id="bookingForm">
+          <h3 class="form-title">Formulaire de Reservation</h3>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="nom"><i data-lucide="user"></i> Nom complet</label>
+              <input type="text" id="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="input-group">
+              <label for="email"><i data-lucide="mail"></i> Email</label>
+              <input type="email" id="email" placeholder="votre@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="telephone"><i data-lucide="phone"></i> Telephone</label>
+              <input type="tel" id="telephone" placeholder="+221 XX XXX XX XX" required>
+            </div>
+            <div class="input-group">
+              <label for="typeSejour"><i data-lucide="layers"></i> Type de sejour</label>
+              <select id="typeSejour" required>
+                <option value="">Choisir...</option>
+                <option value="simple">Sejour touristique</option>
+                <option value="affaires">Sejour d'affaires</option>
+                <option value="seminaire">Seminaire / Evenement</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label for="arrivee"><i data-lucide="calendar"></i> Date d'arrivee</label>
+              <input type="date" id="arrivee" required>
+            </div>
+            <div class="input-group">
+              <label for="depart"><i data-lucide="calendar-x"></i> Date de depart</label>
+              <input type="date" id="depart" required>
+            </div>
+          </div>
+
+          <div class="input-group full" id="seminaireBox" style="display:none;">
+            <label for="salle"><i data-lucide="layout-dashboard"></i> Salle de seminaire</label>
+            <select id="salle">
+              <option value="coccinelle">Salle COCCINELLE (35 pers.) - 125 000 FCFA/jour</option>
+              <option value="butterfly">Salle BUTTERFLY (35 pers.) - 125 000 FCFA/jour</option>
+              <option value="filao">Salle FILAO (86 pers.) - 150 000 FCFA/jour</option>
+              <option value="billard">Salle BILLARD (86 pers.) - 150 000 FCFA/jour</option>
+            </select>
+          </div>
+
+          <div class="input-group full">
+            <label for="message"><i data-lucide="message-square"></i> Demande speciale</label>
+            <textarea id="message" rows="3" placeholder="Precisez vos besoins ou demandes particulieres..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold full" id="submit-form">
+            <i data-lucide="send"></i>
+            Envoyer ma reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nous Trouver</p>
+        <h2 class="section-title">Contact et Localisation</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon"><i data-lucide="phone-call"></i></div>
+            <h4>Telephone</h4>
+            <p>+221 77 486 58 21</p>
+            <p>Fixe : 33 952 06 22</p>
+          </div>
+
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><i data-lucide="mail-open"></i></div>
+            <h4>Email</h4>
+            <p>bigfaim@yahoo.com</p>
+          </div>
+
+          <div class="contact-card" id="contact-address">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <h4>Adresse</h4>
+            <p>Avenue Leopold Sedar Senghor<br>Thies, Senegal</p>
+          </div>
+
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-icon"><i data-lucide="clock"></i></div>
+            <h4>Reception</h4>
+            <p>Ouverte 24h/24 - 7j/7</p>
+          </div>
+
+        </div>
+
+        <div class="contact-map-placeholder" id="contact-map">
+          <div class="map-inner">
+            <i data-lucide="map-pin"></i>
+            <p><strong>Hotel BIG FAIM</strong></p>
+            <p>Avenue L.S. Senghor, Thies</p>
+            <a href="https://maps.google.com/?q=Thies+Senegal" target="_blank" class="btn btn-gold" id="open-map">
+              <i data-lucide="external-link"></i> Ouvrir dans Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon"><i data-lucide="hotel"></i></span>
+          <div class="logo-text">
+            <span class="logo-name">BIG FAIM</span>
+            <span class="logo-sub">Hotel et Seminaires</span>
+          </div>
+        </div>
+        <p class="footer-tagline">L'art de l'hospitalite africaine a son summum.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" id="social-facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Instagram" id="social-instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn" id="social-linkedin"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#chambres">Chambres</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#seminaires">Seminaires</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Hebergement</h4>
+        <ul>
+          <li><a href="#chambres">Chambre Simple</a></li>
+          <li><a href="#chambres">Chambre Double</a></li>
+          <li><a href="#chambres">Suite Luxe</a></li>
+          <li><a href="#reservation">Reservation en ligne</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Contact</h4>
+        <p><i data-lucide="map-pin"></i> Avenue L.S. Senghor, Thies</p>
+        <p><i data-lucide="phone"></i> +221 77 486 58 21</p>
+        <p><i data-lucide="mail"></i> bigfaim@yahoo.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2026 Hotel BIG FAIM. Tous droits reserves.</p>
+      <p>Concu avec excellence pour une experience unique.</p>
+    </div>
   </footer>
 
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <i data-lucide="check-circle"></i>
+    <span id="toast-msg">Reservation envoyee avec succes !</span>
+  </div>
+
+  <script>lucide.createIcons();</script>
   <script src="script.js"></script>
 </body>
 </html>
