@@ -49,6 +49,7 @@ function initForm() {
   const typeSejour = document.getElementById("typeSejour");
   const seminaireBox = document.getElementById("seminaireBox");
   const bookingForm = document.getElementById("bookingForm");
+  const submitBtn = document.getElementById("submit-form");
 
   if (typeSejour && seminaireBox) {
     typeSejour.addEventListener("change", () => {
@@ -59,23 +60,27 @@ function initForm() {
   }
 
   if (bookingForm) {
-    bookingForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      showToast("Reservation envoyee avec succes ! Nous vous contacterons rapidement.");
-      bookingForm.reset();
-      if (seminaireBox) seminaireBox.style.display = "none";
+    // La soumission se fera de manière classique via l'attribut action="https://formspree.io/f/xljrvzow"
+    // afin de vous permettre de passer le Captcha initial de Formspree.
+    bookingForm.addEventListener("submit", function () {
+      submitBtn.innerHTML = '<i data-lucide="loader-2" class="spin"></i> Redirection...';
+      if (typeof lucide !== "undefined") lucide.createIcons();
     });
   }
 }
 
 // ── Toast notification ────────────────────────────────────────────
-function showToast(message) {
+function showToast(message, isError = false) {
   const toast = document.getElementById("toast");
   const toastMsg = document.getElementById("toast-msg");
   if (!toast) return;
   if (toastMsg) toastMsg.textContent = message;
+  toast.classList.toggle("error", isError);
   toast.classList.add("show");
-  setTimeout(() => toast.classList.remove("show"), 4000);
+  setTimeout(() => {
+    toast.classList.remove("show");
+    toast.classList.remove("error");
+  }, 5000);
 }
 
 // ── Animated counters ─────────────────────────────────────────────

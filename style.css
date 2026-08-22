@@ -1149,12 +1149,26 @@ textarea { resize: vertical; min-height: 90px; }
   opacity: 0;
   transition: var(--transition);
   box-shadow: var(--shadow-md);
+  max-width: 360px;
+}
+.toast.error {
+  background: #3a1a1a;
+  color: #ff7070;
+  border-color: #6a3a3a;
 }
 .toast.show {
   transform: translateY(0);
   opacity: 1;
 }
-.toast svg { width: 18px; height: 18px; }
+.toast svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* Spin animation for loading */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.spin { animation: spin 0.9s linear infinite; }
+
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1100px) {
