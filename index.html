@@ -14,8 +14,18 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
+  <!-- GLightbox & Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="Images/logo_hotel.png" />
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Hôtel BIG FAIM — Luxe & Prestige à Thiès" />
+  <meta property="og:description" content="Votre destination d'exception à Thiès. Chambres luxueuses, restaurant gastronomique, piscine, spa et salles de séminaires." />
+  <meta property="og:image" content="Images/deventure.png" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
 
@@ -436,30 +446,30 @@
         <p class="section-desc light">Laissez-vous seduire par l'ambiance unique et la beaute de nos espaces.</p>
       </div>
       <div class="gallery-masonry">
-        <div class="gallery-item large">
+        <a href="Images/halte_d_entree.png" class="gallery-item large glightbox" data-glightbox="title: Hall d'entree">
           <img src="Images/halte_d_entree.png" alt="Hall d'entree" loading="lazy">
           <div class="gallery-caption">Hall d'entree</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/hotel_restaurant.jpg" class="gallery-item glightbox" data-glightbox="title: Restaurant">
           <img src="Images/hotel_restaurant.jpg" alt="Restaurant" loading="lazy">
           <div class="gallery-caption">Restaurant</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/suite_1.png" class="gallery-item glightbox" data-glightbox="title: Suite Luxe">
           <img src="Images/suite_1.png" alt="Suite Luxe" loading="lazy">
           <div class="gallery-caption">Suite Luxe</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/piscine.png" class="gallery-item glightbox" data-glightbox="title: Piscine et Detente">
           <img src="Images/piscine.png" alt="Piscine" loading="lazy">
           <div class="gallery-caption">Piscine et Detente</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/hotel_conference salle COCCINELLE.jpg" class="gallery-item glightbox" data-glightbox="title: Salles de Conference">
           <img src="Images/hotel_conference salle COCCINELLE.jpg" alt="Salle de conference" loading="lazy">
           <div class="gallery-caption">Salles de Conference</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/suite_2.png" class="gallery-item glightbox" data-glightbox="title: Chambre Double">
           <img src="Images/suite_2.png" alt="Chambre Double" loading="lazy">
           <div class="gallery-caption">Chambre Double</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -666,6 +676,9 @@
         </div>
         <p class="footer-tagline">L'art de l'hospitalite africaine a son summum.</p>
         <div class="footer-social" style="display: flex; gap: 16px;">
+          <a href="https://www.facebook.com/HotelBigFaim/?locale=fr_FR" aria-label="Facebook" id="social-facebook" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border-radius: 50%; transition: transform 0.3s ease;">
+            <svg viewBox="0 0 24 24" fill="#1877F2" width="20" height="20" style="background: #fff; border-radius: 50%;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
           <a href="https://www.instagram.com/hotel_big_faim?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" aria-label="Instagram" id="social-instagram" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border-radius: 50%; transition: transform 0.3s ease;">
             <svg viewBox="0 0 24 24" fill="url(#ig-grad)" width="20" height="20"><defs><linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949" /><stop offset="50%" stop-color="#d6249f" /><stop offset="100%" stop-color="#285AEB" /></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
           </a>
@@ -717,6 +730,17 @@
     <i data-lucide="check-circle"></i>
     <span id="toast-msg">Reservation envoyee avec succes !</span>
   </div>
+
+  <!-- Floating Mobile Reserve -->
+  <a href="#reservation" class="floating-reserve">
+    <i data-lucide="calendar-check"></i>
+    <span>Réserver</span>
+  </a>
+
+  <!-- Scripts GLightbox & Flatpickr -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/fr.js"></script>
 
   <script>lucide.createIcons();</script>
   <script src="script.js"></script>
