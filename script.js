@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initForm();
   initCounters();
   initNavLinks();
+  initScrollReveal();
+  initPlugins();
 });
 
 // ── Header sticky ─────────────────────────────────────────────────
@@ -149,4 +151,54 @@ function reserverSalle(nomSalle, capacite, tarif) {
     }
     if (typeof lucide !== "undefined") lucide.createIcons();
   }, 600);
+}
+
+// ── Init External Plugins ─────────────────────────────────────────
+function initPlugins() {
+  // GLightbox
+  if (typeof GLightbox !== "undefined") {
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+    });
+  }
+  
+  // Flatpickr
+  if (typeof flatpickr !== "undefined") {
+    flatpickr("#arrivee", {
+      locale: "fr",
+      minDate: "today",
+      dateFormat: "Y-m-d",
+      altInput: true,
+      altFormat: "j F Y"
+    });
+    flatpickr("#depart", {
+      locale: "fr",
+      minDate: "today",
+      dateFormat: "Y-m-d",
+      altInput: true,
+      altFormat: "j F Y"
+    });
+  }
+}
+
+// ── Scroll Reveal Animations ──────────────────────────────────────
+function initScrollReveal() {
+  const elements = document.querySelectorAll('.section-header, .room-card, .service-card, .gallery-item, .about-images, .about-content');
+  elements.forEach((el, index) => {
+    el.classList.add('reveal');
+    el.style.transitionDelay = `${(index % 3) * 0.15}s`;
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }

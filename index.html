@@ -14,7 +14,18 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
+  <!-- GLightbox & Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Images/logo_hotel.png" />
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Hôtel BIG FAIM — Luxe & Prestige à Thiès" />
+  <meta property="og:description" content="Votre destination d'exception à Thiès. Chambres luxueuses, restaurant gastronomique, piscine, spa et salles de séminaires." />
+  <meta property="og:image" content="Images/deventure.png" />
+  <meta property="og:type" content="website" />
 </head>
 <body>
 
@@ -22,7 +33,7 @@
   <header class="header" id="header">
     <div class="header-inner">
       <div class="logo">
-        <span class="logo-icon"><i data-lucide="hotel"></i></span>
+        <span class="logo-icon" style="background: transparent;"><img src="Images/logo_hotel.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;"></span>
         <div class="logo-text">
           <span class="logo-name">BIG FAIM</span>
           <span class="logo-sub">Hotel &amp; Seminaires</span>
@@ -65,17 +76,17 @@
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-number"18+</span>
+          <span class="stat-number">18+</span>
           <span class="stat-label">Annees d'excellence</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number">36</span>
+          <span class="stat-number">63</span>
           <span class="stat-label">Chambres et Suites</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number"90%</span>
+          <span class="stat-number">90%</span>
           <span class="stat-label">Clients satisfaits</span>
         </div>
       </div>
@@ -90,10 +101,10 @@
     <div class="about-grid">
       <div class="about-images">
         <div class="about-img-main">
-          <img src="Images/hotel_lobby.jpg" alt="Hall d'entree de l'Hotel BIG FAIM" loading="lazy">
+          <img src="Images/halte_d_entree.png" alt="Hall d'entree de l'Hotel BIG FAIM" loading="lazy">
         </div>
         <div class="about-img-secondary">
-          <img src="Images/hotel_suite.jpeg" alt="Suite luxueuse de l'Hotel BIG FAIM" loading="lazy">
+          <img src="Images/suite_1.png" alt="Suite luxueuse de l'Hotel BIG FAIM" loading="lazy">
           <div class="about-badge">
             <i data-lucide="star"></i>
             <span>Excellence<br>Hoteliere</span>
@@ -101,10 +112,10 @@
         </div>
       </div>
       <div class="about-content">
-        <p class="section-eyebrow">Notre Histoire</p>
-        <h2 class="section-title">Un Hotel au Coeur<br>de la Culture Senegalaise</h2>
-        <p class="about-text">Situe sur l'Avenue Leopold Sedar Senghor a Thies, l'Hotel BIG FAIM incarne l'excellence de l'hospitalite africaine. Depuis plus de 25 ans, nous accueillons voyageurs, hommes d'affaires et familles dans un cadre alliant luxe contemporain et authenticite locale.</p>
-        <p class="about-text">Chaque detail de notre etablissement a ete pense pour offrir une experience sensorielle unique, de notre cuisine gastronomique aux chambres decorees d'oeuvres d'art africaines.</p>
+        <p class="section-eyebrow">Hotel 2 Etoiles</p>
+        <h2 class="section-title">Un Etablissement Moderne<br>au Coeur de Thies</h2>
+        <p class="about-text">Parce que chaque client est unique, nos receptionnistes vous reservent un accueil personnalise des votre arrivee au Big Faim Hotel restaurant. A chaque sejour, vous vous sentirez toujours un peu plus chez vous !!</p>
+        <p class="about-text">Situe a l'avenue Leopold Sedar Senghor a Thies, dans le quartier d'Aiglon en plein centre-ville. Un emplacement strategique, accessible et un carrefour grace a sa proximite avec la mairie, l'impot et domaine et les autoroutes de Tivaouane et de Touba. Un quartier calme et securise pour offrir un cadre parfait favorable a la detente et au repos.</p>
         <div class="about-features">
           <div class="about-feature">
             <div class="feature-icon-sm"><i data-lucide="leaf"></i></div>
@@ -131,33 +142,33 @@
   <section class="section section-dark" id="chambres">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow light">Nos Hebergements</p>
-        <h2 class="section-title light">Chambres et Suites</h2>
-        <p class="section-desc light">Chaque chambre est un sanctuaire de confort, concu pour repondre aux exigences les plus elevees.</p>
+        <p class="section-eyebrow light">Nos Hebergements 2 Etoiles</p>
+        <h2 class="section-title light">63 Chambres dont 4 Suites</h2>
+        <p class="section-desc light">Dans chacune des chambres il y a une television, un climatiseur, une salle de bain privee, et un mini bar. Les Suites disposent en plus d'un salon et d'une petite cuisine independante bien equipee.</p>
       </div>
 
       <div class="rooms-grid">
 
         <article class="room-card" id="room-simple">
           <div class="room-img-wrap">
-            <img src="Images/chambre_single.jpeg" alt="Chambre Simple" loading="lazy">
+            <img src="Images/chambre_single.jpeg" alt="Chambre Single" loading="lazy">
             <div class="room-badge">Standard</div>
           </div>
           <div class="room-body">
-            <h3>Chambre Simple</h3>
-            <p>Elegante et fonctionnelle, ideale pour les voyageurs solos en quete de confort raffine.</p>
+            <h3>Chambre Single</h3>
+            <p>Confortable et equipee, parfaite pour les voyageurs solos.</p>
             <ul class="room-amenities">
-              <li><i data-lucide="wifi"></i> Wi-Fi haut debit</li>
-              <li><i data-lucide="tv"></i> TV ecran plat</li>
+              <li><i data-lucide="tv"></i> Television</li>
               <li><i data-lucide="wind"></i> Climatisation</li>
               <li><i data-lucide="bath"></i> Salle de bain privee</li>
+              <li><i data-lucide="coffee"></i> Mini bar</li>
             </ul>
             <div class="room-footer">
               <div class="room-price">
                 <span class="price-amount">31 000</span>
                 <span class="price-unit">FCFA / nuit</span>
               </div>
-              <button class="btn-reserve" id="reserve-simple" onclick="reserverChambre('Chambre Simple', '31 000 FCFA / nuit')">
+              <button class="btn-reserve" id="reserve-simple" onclick="reserverChambre('Chambre Single', '31 000 FCFA / nuit')">
                 Reserver <i data-lucide="arrow-right"></i>
               </button>
             </div>
@@ -166,17 +177,17 @@
 
         <article class="room-card featured" id="room-double">
           <div class="room-img-wrap">
-            <img src="Images/chambre_double.jpeg" alt="Chambre Double" loading="lazy">
+            <img src="Images/suite_2.png" alt="Chambre Double" loading="lazy">
             <div class="room-badge popular">Populaire</div>
           </div>
           <div class="room-body">
             <h3>Chambre Double</h3>
-            <p>Parfaite pour les couples, avec un grand lit king et une decoration soignee aux accents africains.</p>
+            <p>Spacieuse pour deux personnes.</p>
             <ul class="room-amenities">
-              <li><i data-lucide="wifi"></i> Wi-Fi haut debit</li>
-              <li><i data-lucide="tv"></i> TV ecran plat</li>
+              <li><i data-lucide="tv"></i> Television</li>
               <li><i data-lucide="wind"></i> Climatisation</li>
-              <li><i data-lucide="bath"></i> Baignoire et douche</li>
+              <li><i data-lucide="bath"></i> Salle de bain privee</li>
+              <li><i data-lucide="coffee"></i> Mini bar</li>
             </ul>
             <div class="room-footer">
               <div class="room-price">
@@ -192,24 +203,24 @@
 
         <article class="room-card" id="room-suite">
           <div class="room-img-wrap">
-            <img src="Images/hotel_suite.jpeg" alt="Suite Luxe" loading="lazy">
+            <img src="Images/suite_1.png" alt="Suite" loading="lazy">
             <div class="room-badge luxury">Suite</div>
           </div>
           <div class="room-body">
-            <h3>Suite Luxe</h3>
-            <p>Notre suite prestige offre un espace de vie exceptionnel avec salon privatif et vue panoramique.</p>
+            <h3>Suite</h3>
+            <p>Espace de vie exceptionnel avec salon et petite cuisine independante bien equipee.</p>
             <ul class="room-amenities">
-              <li><i data-lucide="wifi"></i> Wi-Fi premium</li>
-              <li><i data-lucide="coffee"></i> Bar et minibar</li>
-              <li><i data-lucide="wind"></i> Climatisation</li>
-              <li><i data-lucide="sparkles"></i> Service butler</li>
+              <li><i data-lucide="tv"></i> TV & Climatisation</li>
+              <li><i data-lucide="sofa"></i> Salon</li>
+              <li><i data-lucide="chef-hat"></i> Cuisine independante</li>
+              <li><i data-lucide="bath"></i> Salle de bain privee</li>
             </ul>
             <div class="room-footer">
               <div class="room-price">
                 <span class="price-amount">106 000</span>
                 <span class="price-unit">FCFA / nuit</span>
               </div>
-              <button class="btn-reserve" id="reserve-suite" onclick="reserverChambre('Suite Luxe', '106 000 FCFA / nuit')">
+              <button class="btn-reserve" id="reserve-suite" onclick="reserverChambre('Suite 4eme Single', '106 000 FCFA / nuit')">
                 Reserver <i data-lucide="arrow-right"></i>
               </button>
             </div>
@@ -240,7 +251,7 @@
         <div class="service-card has-img" id="service-restaurant">
           <div class="service-icon"><i data-lucide="utensils"></i></div>
           <h3>Restaurant</h3>
-          <p>Savoureuse cuisine senegalaise et internationale preparee par nos chefs talentueux.</p>
+          <p>Dispose de 35 tables (jusqu'a 80 personnes). Nos serveurs chaleureux vous proposent des mets locaux et d'outremer, jus naturels, sodas et mojitos.</p>
           <div class="service-img">
             <img src="Images/hotel_restaurant.jpg" alt="Restaurant de l'Hotel BIG FAIM" loading="lazy">
           </div>
@@ -249,9 +260,9 @@
         <div class="service-card has-img" id="service-piscine">
           <div class="service-icon"><i data-lucide="waves"></i></div>
           <h3>Piscine</h3>
-          <p>Detendez-vous au bord de notre piscine exterieure entouree de verdure tropicale.</p>
+          <p>Exclusivement reservee aux clients loges a l'hotel (gratuitement). Concue pour vous offrir un moment de detente, de bronzage et de repos au soleil.</p>
           <div class="service-img">
-            <img src="Images/hotel_pool.jpg" alt="Piscine de l'Hotel BIG FAIM" loading="lazy">
+            <img src="Images/piscine.png" alt="Piscine de l'Hotel BIG FAIM" loading="lazy">
           </div>
         </div>
 
@@ -273,17 +284,7 @@
           <p>Service en chambre disponible 24h/24 pour satisfaire toutes vos envies a tout moment.</p>
         </div>
 
-        <div class="service-card" id="service-airport">
-          <div class="service-icon"><i data-lucide="plane-landing"></i></div>
-          <h3>Navette Aeroport</h3>
-          <p>Service de transfert depuis et vers l'aeroport sur reservation pour un accueil sans stress.</p>
-        </div>
 
-        <div class="service-card" id="service-concierge">
-          <div class="service-icon"><i data-lucide="concierge-bell"></i></div>
-          <h3>Conciergerie</h3>
-          <p>Notre equipe est a votre disposition pour organiser visites, excursions et evenements.</p>
-        </div>
 
       </div>
     </div>
@@ -292,8 +293,9 @@
   <!-- ===== EXPERIENCE / CHIFFRES ===== -->
   <section class="section-highlight" id="experience">
     <div class="highlight-content">
-      <p class="section-eyebrow light">Notre Engagement</p>
-      <h2 class="section-title light">Une Experience Inoubliable</h2>
+      <p class="section-eyebrow light">Leaders du Tourisme d'Affaires</p>
+      <h2 class="section-title light">Qualite & Accessibilite</h2>
+      <p class="light" style="color: #ffffff; margin-top: 16px; max-width: 500px; font-size: 1.1rem; line-height: 1.6;">Notre positionnement se distingue grace a nos tarifs, le confort de nos chambres, et notre accessibilite. A ce jour, nous faisons partie des leaders du tourisme d'affaires a Thies, une position meritee au vu de la qualite et de la diversite de notre service.</p>
     </div>
     <div class="highlight-numbers">
       <div class="hl-number" id="hl-guests">
@@ -301,7 +303,7 @@
         <span class="hl-label">Clients accueillis / an</span>
       </div>
       <div class="hl-number" id="hl-rooms">
-        <span class="hl-val" data-target="120">0</span>
+        <span class="hl-val" data-target="63">0</span>
         <span class="hl-label">Chambres disponibles</span>
       </div>
       <div class="hl-number" id="hl-seminars">
@@ -321,7 +323,7 @@
       <div class="section-header">
         <p class="section-eyebrow">Evenements Professionnels</p>
         <h2 class="section-title">Salles de Seminaires</h2>
-        <p class="section-desc">Des espaces modulables et equipes pour vos conferences, formations et evenements d'entreprise.</p>
+        <p class="section-desc">Pour attirer une clientele d'affaires, l'hotel propose 4 salles (conferences, ateliers), dotees de wifi gratuit haut debit et de materiel audiovisuel/micros.</p>
       </div>
 
       <div class="seminars-grid">
@@ -435,30 +437,38 @@
         <p class="section-desc light">Laissez-vous seduire par l'ambiance unique et la beaute de nos espaces.</p>
       </div>
       <div class="gallery-masonry">
-        <div class="gallery-item large">
-          <img src="Images/hotel_lobby.jpg" alt="Hall d'entree" loading="lazy">
+        <a href="Images/halte_d_entree.png" class="gallery-item large glightbox" data-glightbox="title: Hall d'entree">
+          <img src="Images/halte_d_entree.png" alt="Hall d'entree" loading="lazy">
           <div class="gallery-caption">Hall d'entree</div>
-        </div>
-        <div class="gallery-item">
+        </a>
+        <a href="Images/hotel_restaurant.jpg" class="gallery-item glightbox" data-glightbox="title: Restaurant">
           <img src="Images/hotel_restaurant.jpg" alt="Restaurant" loading="lazy">
           <div class="gallery-caption">Restaurant</div>
-        </div>
-        <div class="gallery-item">
-          <img src="Images/hotel_suite.jpeg" alt="Suite Luxe" loading="lazy">
+        </a>
+        <a href="Images/suite_1.png" class="gallery-item glightbox" data-glightbox="title: Suite Luxe">
+          <img src="Images/suite_1.png" alt="Suite Luxe" loading="lazy">
           <div class="gallery-caption">Suite Luxe</div>
-        </div>
-        <div class="gallery-item">
-          <img src="Images/hotel_pool.jpg" alt="Piscine" loading="lazy">
+        </a>
+        <a href="Images/piscine.png" class="gallery-item glightbox" data-glightbox="title: Piscine et Detente">
+          <img src="Images/piscine.png" alt="Piscine" loading="lazy">
           <div class="gallery-caption">Piscine et Detente</div>
-        </div>
-        <div class="gallery-item">
-          <img src="Images/hotel_conference.jpg" alt="Salle de conference" loading="lazy">
+        </a>
+        <a href="Images/hotel_conference salle COCCINELLE.jpg" class="gallery-item glightbox" data-glightbox="title: Salles de Conference">
+          <img src="Images/hotel_conference salle COCCINELLE.jpg" alt="Salle de conference" loading="lazy">
           <div class="gallery-caption">Salles de Conference</div>
-        </div>
-        <div class="gallery-item">
-          <img src="Images/chambre_double.jpeg" alt="Chambre Double" loading="lazy">
+        </a>
+        <a href="Images/suite_2.png" class="gallery-item glightbox" data-glightbox="title: Chambre Double">
+          <img src="Images/suite_2.png" alt="Chambre Double" loading="lazy">
           <div class="gallery-caption">Chambre Double</div>
-        </div>
+        </a>
+        <a href="Images/chambre_single.jpeg" class="gallery-item glightbox" data-glightbox="title: Chambre Single">
+          <img src="Images/chambre_single.jpeg" alt="Chambre Single" loading="lazy">
+          <div class="gallery-caption">Chambre Single</div>
+        </a>
+        <a href="Images/deventure.png" class="gallery-item glightbox" data-glightbox="title: Devanture">
+          <img src="Images/deventure.png" alt="Devanture" loading="lazy">
+          <div class="gallery-caption">Devanture</div>
+        </a>
       </div>
     </div>
   </section>
@@ -476,7 +486,7 @@
           <div class="stars">
             <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
           </div>
-          <p>"Un sejour absolument parfait. Le personnel est attentionne et les chambres sont magnifiques. Je reviendrai sans hesiter !"</p>
+          <p>Nous sommes arrivés au Sénégal à 1 heure du matin et cherchions un endroit pratique où passer une nuit près de l’aéroport. Malgré l’heure très matinale, le concierge nous a réservé un accueil chaleureux. </p>
           <div class="testimonial-author">
             <div class="author-avatar" style="background:#c9a84c;">A</div>
             <div>
@@ -645,15 +655,8 @@
 
         </div>
 
-        <div class="contact-map-placeholder" id="contact-map">
-          <div class="map-inner">
-            <i data-lucide="map-pin"></i>
-            <p><strong>Hotel BIG FAIM</strong></p>
-            <p>Avenue L.S. Senghor, Thies</p>
-            <a href="https://maps.google.com/?q=Thies+Senegal" target="_blank" class="btn btn-gold" id="open-map">
-              <i data-lucide="external-link"></i> Ouvrir dans Maps
-            </a>
-          </div>
+        <div class="contact-map-placeholder" id="contact-map" style="overflow: hidden; border-radius: 16px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.53876483355!2d-16.925851599999998!3d14.794990399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bf925eb1f901%3A0xdb9260c268cb323!2sH%C3%B4tel-Restaurant%20Big%20Faim!5e0!3m2!1sfr!2ssn!4v1789686522858!5m2!1sfr!2ssn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
     </div>
@@ -664,17 +667,25 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="logo">
-          <span class="logo-icon"><i data-lucide="hotel"></i></span>
+          <span class="logo-icon" style="background: transparent;"><img src="Images/logo_hotel.png" alt="Logo" style="width: 100%; height: 100%; object-fit: contain;"></span>
           <div class="logo-text">
             <span class="logo-name">BIG FAIM</span>
             <span class="logo-sub">Hotel et Seminaires</span>
           </div>
         </div>
         <p class="footer-tagline">L'art de l'hospitalite africaine a son summum.</p>
-        <div class="footer-social">
-          <a href="#" aria-label="Facebook" id="social-facebook"><i data-lucide="facebook"></i></a>
-          <a href="#" aria-label="Instagram" id="social-instagram"><i data-lucide="instagram"></i></a>
-          <a href="#" aria-label="LinkedIn" id="social-linkedin"><i data-lucide="linkedin"></i></a>
+        <div class="footer-social" style="display: flex; gap: 16px;">
+          <a href="https://www.facebook.com/HotelBigFaim/?locale=fr_FR" aria-label="Facebook" id="social-facebook" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border-radius: 50%; transition: transform 0.3s ease;">
+            <svg viewBox="0 0 24 24" fill="#1877F2" width="20" height="20" style="background: #fff; border-radius: 50%;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/hotel_big_faim?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" aria-label="Instagram" id="social-instagram" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border-radius: 50%; transition: transform 0.3s ease;">
+            <svg viewBox="0 0 24 24" fill="url(#ig-grad)" width="20" height="20"><defs><linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#fd5949" /><stop offset="50%" stop-color="#d6249f" /><stop offset="100%" stop-color="#285AEB" /></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@hotelbigfaim?_r=1&_t=ZS-99ovrvamWsW" aria-label="TikTok" id="social-tiktok" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.05); border-radius: 50%; transition: transform 0.3s ease;">
+            <svg viewBox="0 0 24 24" fill="#ffffff" width="20" height="20">
+              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v7.02c-.01 1.63-.52 3.16-1.51 4.33-1.11 1.32-2.71 2.07-4.41 2.14-1.72.07-3.41-.5-4.71-1.63-1.2-1.04-1.92-2.51-2.07-4.08-.18-1.93.44-3.83 1.72-5.18 1.15-1.22 2.74-1.91 4.41-1.95v4.06c-.84.05-1.66.45-2.19 1.12-.51.64-.72 1.48-.56 2.29.13.71.55 1.35 1.14 1.74.62.42 1.4.58 2.13.46.73-.13 1.38-.56 1.79-1.16.42-.61.64-1.35.63-2.1V.02z" />
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -718,6 +729,17 @@
     <i data-lucide="check-circle"></i>
     <span id="toast-msg">Reservation envoyee avec succes !</span>
   </div>
+
+  <!-- Floating Mobile Reserve -->
+  <a href="#reservation" class="floating-reserve">
+    <i data-lucide="calendar-check"></i>
+    <span>Réserver</span>
+  </a>
+
+  <!-- Scripts GLightbox & Flatpickr -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/fr.js"></script>
 
   <script>lucide.createIcons();</script>
   <script src="script.js"></script>

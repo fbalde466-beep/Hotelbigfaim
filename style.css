@@ -161,11 +161,12 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
   color: var(--white);
 }
 .logo-icon {
-  width: 40px; height: 40px;
+  width: 60px; height: 60px;
   background: var(--gold);
-  border-radius: 8px;
+  border-radius: 20%;
   display: flex; align-items: center; justify-content: center;
   color: var(--dark);
+  overflow: hidden;
 }
 .logo-icon svg { width: 20px; height: 20px; }
 .logo-name {
@@ -229,7 +230,8 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('Images/hotel_hero.jpg') center/cover no-repeat;
+  background: url('Images/deventure.png') center/cover no-repeat;
+  background-attachment: fixed;
   text-align: center;
   padding: 120px 24px 80px;
 }
@@ -561,7 +563,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
 /* ─── SERVICES ─── */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -771,7 +773,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
 .gallery-masonry {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 260px 260px;
+  grid-auto-rows: 260px;
   gap: 16px;
 }
 
@@ -1216,4 +1218,50 @@ textarea { resize: vertical; min-height: 90px; }
   .hero-actions { flex-direction: column; align-items: center; }
   .reservation-info { padding: 48px 24px; }
   .reservation-form-wrap { padding: 40px 20px; }
+}
+
+/* ─── SCROLL REVEAL ANIMATIONS ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── FLOATING RESERVE BUTTON ─── */
+.floating-reserve {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 16px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+}
+.floating-reserve:hover {
+  background: var(--gold-light);
+  transform: translateY(-4px);
+}
+.floating-reserve svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 769px) {
+  .floating-reserve {
+    display: none;
+  }
 }
